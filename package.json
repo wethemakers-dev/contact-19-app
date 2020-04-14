@@ -1,0 +1,125 @@
+{
+  "name": "contact19",
+  "version": "1.0.0",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "android:release": "react-native run-android --variant release",
+    "ios:release": "react-native run-ios --configuration Release",
+    "start": "react-native start",
+    "lint": "tslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "format": "prettier 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}' --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wethemakers-dev/contact-19-app.git",
+    "baseUrl": "https://github.com/wethemakers-dev/contact-19-app"
+  },
+  "author": {
+    "name": "Ahmad Santarissy",
+    "email": "ahmad@wethemakers.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wethemakers-dev/contact-19-app/issues"
+  },
+  "homepage": "https://github.com/wethemakers-dev/contact-19-app#readme",
+  "dependencies": {
+    "@invertase/react-native-apple-authentication": "^0.2.0",
+    "@react-native-community/async-storage": "^1.9.0",
+    "@react-native-community/google-signin": "^4.0.0",
+    "@react-native-community/masked-view": "^0.1.9",
+    "@react-native-firebase/app": "^6.4.0",
+    "@react-native-firebase/messaging": "^6.4.0",
+    "@react-navigation/native": "^5.1.5",
+    "@react-navigation/stack": "^5.2.10",
+    "appcenter": "^3.0.1",
+    "appcenter-analytics": "^3.0.1",
+    "appcenter-crashes": "^3.0.1",
+    "i18next": "^19.4.1",
+    "libphonenumber-js": "^1.7.50",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "react": "16.11.0",
+    "react-i18next": "^11.3.4",
+    "react-native": "0.62.2",
+    "react-native-background-fetch": "^3.0.4",
+    "react-native-background-geolocation": "^3.6.2",
+    "react-native-confirmation-code-field": "^6.0.0",
+    "react-native-country-picker-modal": "^1.10.0",
+    "react-native-device-info": "^5.5.4",
+    "react-native-fbsdk": "^1.1.2",
+    "react-native-flipper": "^0.37.0",
+    "react-native-geolocation-service": "^4.0.0",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-modal": "^11.5.6",
+    "react-native-permissions": "^2.1.1",
+    "react-native-picker-select": "^7.0.0",
+    "react-native-reanimated": "^1.8.0",
+    "react-native-restart": "^0.0.14",
+    "react-native-safe-area-context": "^0.7.3",
+    "react-native-screens": "^2.4.0",
+    "react-native-snap-carousel": "^3.9.0",
+    "react-native-svg": "^12.1.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "rn-redux-middleware-flipper": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "@types/jest": "^25.2.1",
+    "@types/lodash": "^4.14.149",
+    "@types/moment": "^2.13.0",
+    "@types/react-native": "^0.62.2",
+    "@types/react-native-fbsdk": "^1.1.0",
+    "@types/react-native-snap-carousel": "^3.8.1",
+    "@types/react-native-vector-icons": "^6.4.5",
+    "@types/react-redux": "^7.1.7",
+    "@types/react-test-renderer": "^16.9.2",
+    "babel-jest": "^25.3.0",
+    "husky": "^4.2.5",
+    "jest": "^25.3.0",
+    "lint-staged": "^10.1.3",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "prettier": "^2.0.4",
+    "pretty-format": "^25.3.0",
+    "react-test-renderer": "16.11.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^9.0.0",
+    "tslint-etc": "^1.10.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "tslint-react": "^4.2.0",
+    "tslint-react-hooks": "^2.2.2",
+    "tslint-react-native": "^0.0.7",
+    "typescript": "^3.7.3"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "tslint --fix"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
+  }
+}
