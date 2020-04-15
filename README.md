@@ -39,8 +39,11 @@ Running the Application:
 cd ios/ && pod install && cd ..
 ```
 3. Run: `yarn run ios` or `yarn run android`
-<br><br><br>
-#### Created & Managed by
+
+#### More Details
+For more details and cutomization, contact us at [team@wethemakers.dev](mailto:team@wethemakers.dev)
+
+### Created & Managed by
 
 <div>
   <a href="https://cgiandi.com">
